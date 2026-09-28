@@ -36,6 +36,9 @@ Preencha todas as linhas pertinentes ao conteúdo da disciplina. Acrescente árv
 Para **cada situação**, identifique a estrutura, justifique sua resposta com uma propriedade técnica e explique **um limite da analogia** (algo que a comparação não representa fielmente). Evite responder apenas com o nome da árvore.
 
 1. Uma estante de números é reorganizada por rotações quando um lado fica alto demais em relação ao outro.
+- **Estrutura:**
+- **Propriedade técnica que justifica:**
+- **Limite da analogia:**
 2. Um catálogo guarda várias chaves por página; quando uma página fica cheia, ela é dividida.
 3. Uma fila mantém a tarefa de maior prioridade no topo para retirá-la primeiro.
 4. Um índice percorre letras sucessivas e compartilha o início das palavras de mesmo prefixo.
