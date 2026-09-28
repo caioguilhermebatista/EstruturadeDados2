@@ -36,15 +36,33 @@ Preencha todas as linhas pertinentes ao conteúdo da disciplina. Acrescente árv
 Para **cada situação**, identifique a estrutura, justifique sua resposta com uma propriedade técnica e explique **um limite da analogia** (algo que a comparação não representa fielmente). Evite responder apenas com o nome da árvore.
 
 1. Uma estante de números é reorganizada por rotações quando um lado fica alto demais em relação ao outro.
-- **Estrutura:**
-- **Propriedade técnica que justifica:**
-- **Limite da analogia:**
+- **Estrutura:** Árvore AVL
+- **Propriedade técnica que justifica:** É uma árvore de busca balanceada por altura. Após inserções ou remoções, rotações são usadas para manter a diferença de altura entre as subárvores dentro do limite permitido.
+- **Limite da analogia:** A estante sugere apenas uma organização física. Na árvore real, o balanceamento é calculado matematicamente pelas alturas das subárvores; não é simplesmente “arrumar” visualmente um lado.
 2. Um catálogo guarda várias chaves por página; quando uma página fica cheia, ela é dividida.
+- **Estrutura:** Árvore B
+- **Propriedade técnica que justifica:** Cada nó pode armazenar várias chaves e vários filhos. Quando um nó atinge sua capacidade, ocorre uma divisão (split) para manter a estrutura balanceada.
+- **Limite da analogia:** A “página” não é literalmente uma folha de papel: em sistemas de armazenamento, ela normalmente representa um bloco de memória/disco que pode conter vários registros ou chaves.
 3. Uma fila mantém a tarefa de maior prioridade no topo para retirá-la primeiro.
+- **Estrutura:** Heap
+- **Propriedade técnica que justifica:** O elemento de maior prioridade fica na raiz de um max-heap (ou o de menor prioridade, em um min-heap), permitindo sua remoção eficiente.
+- **Limite da analogia:** Uma fila comum sugere que o primeiro elemento inserido sai primeiro, seria "FIFO", mas um heap não segue FIFO; a prioridade determina a ordem de remoção.
 4. Um índice percorre letras sucessivas e compartilha o início das palavras de mesmo prefixo.
+- **Estrutura:** Trie
+- **Propriedade técnica que justifica:** Cada nível representa normalmente um caractere, e palavras que possuem o mesmo prefixo compartilham os mesmos nós iniciais.
+- **Limite da analogia:** A analogia com um índice de palavras não representa que todas as palavras necessariamente ocupem um caminho completo separado; os prefixos comuns são justamente compartilhados, economizando comparações em determinadas operações.
 5. Uma estrutura usa cores, recolorações e rotações para manter controlada a altura dos caminhos de busca.
+- **Estrutura:** Árvore Rubro-Negra
+- **Propriedade técnica que justifica:** Os nós possuem uma cor (vermelho ou preto) e regras de coloração garantem que os caminhos não fiquem excessivamente desbalanceados. Rotações e recolorações corrigem violações após alterações.
+- **Limite da analogia:** “Controlar a altura” não significa manter todos os caminhos com a mesma altura. A árvore é apenas aproximadamente balanceada, com uma altura limitada em relação ao número de nós.
 6. Um índice conduz às folhas que contêm os registros, ligadas entre si para facilitar consultas por intervalo.
+- **Estrutura:** Árvore B+
+- **Propriedade técnica que justifica:** Os registros/dados ficam nas folhas, e as folhas são geralmente conectadas por ponteiros, permitindo percorrê-las sequencialmente e realizar consultas por intervalo com eficiência.
+- **Limite da analogia:** A analogia de “conduzir às folhas” pode sugerir que os dados estão espalhados por todos os níveis; na B+, os nós internos funcionam principalmente como índices, enquanto os registros ficam nas folhas.
 7. Numa coleção de números, cada nó direciona valores menores para a esquerda e maiores para a direita.
+- **Estrutura:** Árvore Binária de Busca
+- **Propriedade técnica que justifica:** Para cada nó, os valores da subárvore esquerda são menores e os da subárvore direita são maiores, permitindo buscar valores seguindo comparações.
+- **Limite da analogia:** Essa regra, sozinha, não garante balanceamento. Se os valores forem inseridos em uma ordem desfavorável, a árvore pode ficar parecida com uma lista e perder eficiência.
 
 ## Entrega
 
