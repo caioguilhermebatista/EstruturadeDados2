@@ -25,7 +25,7 @@ Preencha todas as linhas pertinentes ao conteúdo da disciplina. Acrescente árv
 
 | Estrutura | Organização dos dados | Regra ou propriedade principal | Operação ou ajuste importante | Exemplo de aplicação | Referência consultada |
 |---|---|---|---|---|---|
-| Árvore binária de busca (ABB) | dsd|sdsd |sdsd | sdsd| sdsd|
+| Árvore binária de busca (ABB) |Ordenação por Comparação: A posição de cada valor orienta a procura e a organização.   Valores Menores: Seguem/ficam para a esquerda de um determinado nó.   Valores Maiores: Seguem/ficam para a direita de um determinado nó.   Forma da Árvore: Pode variar entre mais equilibrada ou degenerada, dependendo da ordem em que os dados são inseridos. | | | | |
 | AVL |Como qualqueem uma árvore binária de busca, os nós mantêm sua ordenação baseada em chaves: valores menores ficam à esquerda de um nó e valores maiores ficam à direita.
 Na Árvore AVL, cada nó armazena uma propriedade extra chamada Fator de Balanceamento |Condição de Balanceamento de Adel’son-Vel’skii e Landis: Para todo nó da árvore, a diferença entre as alturas da subárvore esquerda ($h_E$) e da subárvore direita ($h_D$) deve ser no máximo $1$. Garantia de Altura: Devido a esse controle rígido de altura, a altura total de uma Árvore AVL com $n$ nós é mantida em $O(\log n)$, garantindo que a busca no pior caso continue sendo executada em tempo logarítmico. |Rotações Simples:
 Rotação à Direita (LL): Aplicada quando a subárvore esquerda do filho esquerdo fica mais alta (caso esquerda-esquerda).
