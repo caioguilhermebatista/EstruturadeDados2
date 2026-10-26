@@ -92,16 +92,8 @@ Ambos têm a sequência (2, 2, 2, 2, 2, 2), porém não são isomorfos: G₁ é 
 
 **Objetivo:** construir um grafo simples com 8 vértices e sequência de graus (1, 1, 2, 3, 3, 4, 4, 6).
 
-### Verificação prévia (o grafo existe?)
+<img width="757" height="279" alt="Grafo G e H drawio" src="https://github.com/user-attachments/assets/ae252cda-0eec-45f9-839d-1302fe622a16" />
 
-- Soma dos graus = 1+1+2+3+3+4+4+6 = **24**, que é par → número de arestas = 24 / 2 = **12**.
-- Teste de Havel–Hakimi (ordem decrescente: 6, 4, 4, 3, 3, 2, 1, 1):
-  1. Remove 6 e subtrai 1 dos 6 maiores seguintes → (3, 3, 2, 2, 1, 0, 1) → ordenado: (3, 3, 2, 2, 1, 1, 0)
-  2. Remove 3 e subtrai 1 dos 3 seguintes → (2, 1, 1, 1, 1, 0)
-  3. Remove 2 e subtrai 1 dos 2 seguintes → (0, 0, 1, 1, 0) → ordenado: (1, 1, 0, 0, 0)
-  4. Remove 1 e subtrai 1 do seguinte → (0, 0, 0, 0)
-
-A sequência é gráfica, ou seja, existe um grafo simples com esses graus.
 
 ### 1. Vértices
 
