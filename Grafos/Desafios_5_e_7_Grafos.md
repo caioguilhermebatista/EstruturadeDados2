@@ -92,7 +92,8 @@ Ambos têm a sequência (2, 2, 2, 2, 2, 2), porém não são isomorfos: G₁ é 
 
 **Objetivo:** construir um grafo simples com 8 vértices e sequência de graus (1, 1, 2, 3, 3, 4, 4, 6).
 
-<img width="398" height="388" alt="GrafoDoDesafio7 drawio" src="https://github.com/user-attachments/assets/85c9b165-162a-4857-bfc5-5ae30cb5beb2" />
+<img width="398" height="388" alt="GrafoDoDesafio7 drawio" src="https://github.com/user-attachments/assets/a96dce36-7f32-4052-a699-93560c98293c" />
+
 
 
 ### 1. Vértices
