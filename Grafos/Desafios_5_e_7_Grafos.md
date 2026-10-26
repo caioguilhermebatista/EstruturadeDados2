@@ -2,7 +2,7 @@
 
 **Estrutura de Dados II | Unidade III — Grafos | Profa. Kadidja Valéria**
 
-**Nome:** ____________________  **Turma:** ________  **Data:** ___/___/______
+**Nome:** Caio Guilherme Batista Rodrigues  **Turma:** D1  **Data:** 26/10/2026
 
 ---
 
