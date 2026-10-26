@@ -13,6 +13,9 @@
 - G: V = {1, 2, 3, 4}; E = {(1,2), (2,3), (3,4), (4,1)}
 - H: V = {a, b, c, d}; E = {(a,c), (c,b), (b,d), (d,a)}
 
+- <img width="757" height="279" alt="Grafo G e H drawio" src="https://github.com/user-attachments/assets/da129b48-9a69-47e5-8307-fd4e455abb52" />
+
+
 ### 1. Ordem e tamanho
 
 - **Ordem** = número de vértices; **tamanho** = número de arestas.
