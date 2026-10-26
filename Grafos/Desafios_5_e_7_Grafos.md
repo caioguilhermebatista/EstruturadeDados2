@@ -72,16 +72,16 @@ As 4 arestas de G são levadas em 4 arestas distintas de H. Como H possui exatam
 
 **Os grafos G e H são isomorfos.**
 
-**Justificativa:** existe uma bijeção f entre os vértices de G e H que preserva as adjacências (e as não adjacências). Além disso, os invariantes coincidem: mesma ordem (4), mesmo tamanho (4) e mesma sequência de graus (2, 2, 2, 2). Os desenhos e rótulos são diferentes, mas a estrutura é a mesma: um ciclo de 4 vértices (C₄).
+**Justificativa:** existe uma bijeção f entre os vértices de G e H que preserva as adjacências e as não adjacências. Além disso, os invariantes coincidem: mesma ordem (4), mesmo tamanho (4) e mesma sequência de graus (2, 2, 2, 2). Os desenhos e rótulos são diferentes, mas a estrutura é a mesma.
 
 ### Reflexão: ter a mesma sequência de graus é suficiente para garantir isomorfismo?
 
-Não, a sequência de graus é uma condição necessária, mas não suficiente. Contraexemplo:
+Não, a sequência de graus é uma condição necessária, mas não suficiente. Por exemplo:
 
-- G₁ = C₆ (ciclo de 6 vértices): 6 vértices, 6 arestas, todos com grau 2.
+- G₁ = C₆: 6 vértices, 6 arestas, todos com grau 2.
 - G₂ = dois triângulos disjuntos (K₃ ∪ K₃): 6 vértices, 6 arestas, todos com grau 2.
 
-Ambos têm a sequência (2, 2, 2, 2, 2, 2), porém não são isomorfos: G₁ é conexo e G₂ não é (possui duas componentes). Como a conexidade é preservada por isomorfismos, os grafos têm estruturas diferentes. Portanto, sequências de graus iguais só permitem *descartar* isomorfismo quando diferem; quando coincidem, é preciso exibir a bijeção que preserva as adjacências.
+Ambos têm a sequência (2, 2, 2, 2, 2, 2), porém não são isomorfos: G₁ é conexo e G₂ não é, pois possui duas componentes. Como a conexidade é preservada por isomorfismos, os grafos têm estruturas diferentes. Portanto, sequências de graus iguais só permitem "descartar" isomorfismo quando diferem; quando coincidem, é preciso exibir a bijeção que preserva as adjacências.
 
 ---
 
