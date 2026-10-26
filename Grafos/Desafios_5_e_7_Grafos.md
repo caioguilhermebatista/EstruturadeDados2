@@ -1,4 +1,4 @@
-# Material do Estudante — Desafios 5 e 7 (Respondido)
+# Material do Estudante — Desafios 5 e 7 
 
 **Estrutura de Dados II | Unidade III — Grafos | Profa. Kadidja Valéria**
 
