@@ -134,28 +134,28 @@ E = {AB, AC, AD, AE, AF, AG, BC, BD, BE, CD, CE, FH}
 | G | A | **1** |
 | H | F | **1** |
 
-**Sequência obtida (ordem não decrescente):** (1, 1, 2, 3, 3, 4, 4, 6) 
+**Sequência obtida:** (1, 1, 2, 3, 3, 4, 4, 6) 
 
 ### 5. Verificação
 
-- **Soma dos graus:** 6 + 4 + 4 + 3 + 3 + 2 + 1 + 1 = 24
-- **Número de arestas:** 12
-- **Soma dos graus = 2 × número de arestas?** Sim: 24 = 2 × 12
+| Vértice | Grau obtido |
+|:-------:|:-----------:|
+| A | 6 |
+| B | 4 |
+| C | 4 |
+| D | 3 |
+| E | 3 |
+| F | 2 |
+| G | 1 |
+| H | 1 |
 
-### Desenho (representação textual)
+**Conjunto de arestas E:** {AB, AC, AD, AE, AF, AG, BC, BD, BE, CD, CE, FH}
 
-```
-        G
-        |
-        A ------ F ------ H
-      / | \
-     /  |  \
-    B---+---C
-     \  |  /
-      \ | /
-       D  E      (D e E ligados a A, B e C)
-```
+**Sequência obtida:** (1, 1, 2, 3, 3, 4, 4, 6)
 
+**Soma dos graus:** 24  **Número de arestas:** 12
+
+**Verificação:** soma dos graus = 2 × número de arestas? Sim, 24 = 2 × 12.
 Estrutura resumida: A, B, C formam um triângulo; D e E estão ligados aos três (A, B, C); G é pendente em A; e F liga A a H, formando um caminho A–F–H.
 
 ---
