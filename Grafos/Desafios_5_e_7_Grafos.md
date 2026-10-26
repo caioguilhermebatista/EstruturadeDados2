@@ -96,15 +96,15 @@ Ambos têm a sequência (2, 2, 2, 2, 2, 2), porém não são isomorfos: G₁ é 
   1. Remove 6 e subtrai 1 dos 6 maiores seguintes → (3, 3, 2, 2, 1, 0, 1) → ordenado: (3, 3, 2, 2, 1, 1, 0)
   2. Remove 3 e subtrai 1 dos 3 seguintes → (2, 1, 1, 1, 1, 0)
   3. Remove 2 e subtrai 1 dos 2 seguintes → (0, 0, 1, 1, 0) → ordenado: (1, 1, 0, 0, 0)
-  4. Remove 1 e subtrai 1 do seguinte → (0, 0, 0, 0) ✔
+  4. Remove 1 e subtrai 1 do seguinte → (0, 0, 0, 0)
 
-A sequência é **gráfica**, ou seja, existe um grafo simples com esses graus.
+A sequência é gráfica, ou seja, existe um grafo simples com esses graus.
 
 ### 1. Vértices
 
 V = {A, B, C, D, E, F, G, H}
 
-### 2. Construção das arestas (do vértice de maior grau para o menor)
+### 2. Construção das arestas 
 
 Graus-alvo: A = 6, B = 4, C = 4, D = 3, E = 3, F = 2, G = 1, H = 1.
 
@@ -116,11 +116,10 @@ Graus-alvo: A = 6, B = 4, C = 4, D = 3, E = 3, F = 2, G = 1, H = 1.
    Faltam: F = 1, H = 1 (os demais = 0).
 4. **F** liga-se a **H** → aresta FH.
 
-Nenhum laço e nenhuma aresta paralela foi usado.
 
 ### 3. Conjunto de arestas
 
-**E = {AB, AC, AD, AE, AF, AG, BC, BD, BE, CD, CE, FH}** (12 arestas)
+E = {AB, AC, AD, AE, AF, AG, BC, BD, BE, CD, CE, FH}
 
 ### 4. Graus obtidos
 
@@ -135,13 +134,13 @@ Nenhum laço e nenhuma aresta paralela foi usado.
 | G | A | **1** |
 | H | F | **1** |
 
-**Sequência obtida (ordem não decrescente):** (1, 1, 2, 3, 3, 4, 4, 6) ✔
+**Sequência obtida (ordem não decrescente):** (1, 1, 2, 3, 3, 4, 4, 6) 
 
 ### 5. Verificação
 
-- **Soma dos graus:** 6 + 4 + 4 + 3 + 3 + 2 + 1 + 1 = **24**
-- **Número de arestas:** **12**
-- **Soma dos graus = 2 × número de arestas?** Sim: 24 = 2 × 12 ✔ (Lema do aperto de mãos: cada aresta contribui com 1 grau para cada uma de suas duas extremidades.)
+- **Soma dos graus:** 6 + 4 + 4 + 3 + 3 + 2 + 1 + 1 = 24
+- **Número de arestas:** 12
+- **Soma dos graus = 2 × número de arestas?** Sim: 24 = 2 × 12
 
 ### Desenho (representação textual)
 
