@@ -55,7 +55,7 @@ Ambos os grafos são ciclos de comprimento 4 (G: 1–2–3–4–1; H: a–c–b
 | 3 | b |
 | 4 | d |
 
-A função é **bijetora** (cada vértice de H é imagem de exatamente um vértice de G).
+A função é bijetora (cada vértice de H é imagem de exatamente um vértice de G).
 
 ### 4. Verificação aresta por aresta
 
