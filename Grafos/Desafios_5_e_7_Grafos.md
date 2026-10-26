@@ -66,7 +66,7 @@ A função é bijetora (cada vértice de H é imagem de exatamente um vértice d
 | (3,4) | (b,d) | Sim |
 | (4,1) | (d,a) | Sim |
 
-As 4 arestas de G são levadas em 4 arestas distintas de H. Como H possui exatamente 4 arestas, não sobra nenhuma aresta em H sem correspondente. Logo, **u e v são adjacentes em G ⇔ f(u) e f(v) são adjacentes em H**.
+As 4 arestas de G são levadas em 4 arestas distintas de H. Como H possui exatamente 4 arestas, não sobra nenhuma aresta em H sem correspondente. Logo, u e v são adjacentes em G ⇔ f(u) e f(v) são adjacentes em H.
 
 ### 5. Conclusão
 
