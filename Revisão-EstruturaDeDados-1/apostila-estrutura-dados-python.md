@@ -69,7 +69,7 @@ A função `print()` exibe informações na tela.
 Podemos também armazenar uma informação:
 
 ```python
-nome = "Maria"
+nome = "Caio"
 
 print(nome)
 ```
@@ -77,7 +77,7 @@ print(nome)
 O programa produz:
 
 ```text
-Maria
+Caio
 ```
 
 Python possui uma sintaxe relativamente simples, permitindo que o estudante concentre sua atenção nos conceitos de organização dos dados.
@@ -93,7 +93,7 @@ Exemplos:
 ```python
 25
 3.14
-"Maria"
+"Caio"
 'A'
 True
 ```
@@ -150,7 +150,7 @@ Quando um programa Python é executado, os dados utilizados pelo programa precis
 Considere:
 
 ```python
-idade = 20
+idade = 22
 ```
 
 Uma representação conceitual seria:
@@ -160,7 +160,7 @@ idade
   ↓
 objeto inteiro
   ↓
-20
+22
 ```
 
 Em Python, é importante compreender que as variáveis funcionam como **referências para objetos**.
@@ -168,10 +168,10 @@ Em Python, é importante compreender que as variáveis funcionam como **referên
 Por exemplo:
 
 ```python
-idade = 20
+idade = 22
 ```
 
-Podemos pensar que o nome `idade` está associado a um objeto que representa o valor `20`.
+Podemos pensar que o nome `idade` está associado a um objeto que representa o valor `22`.
 
 Essa característica é importante para compreender posteriormente:
 
@@ -193,9 +193,9 @@ Em Python, não precisamos declarar explicitamente o tipo de uma variável antes
 Exemplo:
 
 ```python
-idade = 20
+idade = 22
 nota = 8.5
-nome = "Maria"
+nome = "Caio"
 aprovado = True
 ```
 
@@ -203,16 +203,16 @@ Os principais tipos básicos incluem:
 
 | Tipo | Exemplo | Utilização |
 |---|---|---|
-| `int` | `20` | Números inteiros |
+| `int` | `22` | Números inteiros |
 | `float` | `8.5` | Números reais |
-| `str` | `"Maria"` | Textos |
+| `str` | `"Caio"` | Textos |
 | `bool` | `True` | Valores lógicos |
 | `NoneType` | `None` | Ausência de valor |
 
 Podemos verificar o tipo de um objeto usando `type()`:
 
 ```python
-idade = 20
+idade = 22
 
 print(type(idade))
 ```
@@ -226,8 +226,7 @@ Resultado aproximado:
 Outro exemplo:
 
 ```python
-nome = "Maria"
-
+nome = "Caio"
 print(type(nome))
 ```
 
@@ -240,8 +239,7 @@ Python fornece a função `id()` para obter um identificador associado ao objeto
 Exemplo:
 
 ```python
-idade = 20
-
+idade = 22
 print(idade)
 print(id(idade))
 ```
@@ -251,7 +249,7 @@ O valor retornado por `id()` não deve ser tratado como um endereço de memória
 Podemos pensar conceitualmente:
 
 ```text
-idade ───────► objeto 20
+idade ───────► objeto 22
 ```
 
 ## Duas variáveis e um objeto
@@ -675,7 +673,7 @@ Em Python, strings são objetos do tipo `str`.
 Exemplo:
 
 ```python
-nome = "Maria"
+nome = "Caio"
 ```
 
 Diferentemente de C, não precisamos representar manualmente o caractere terminador `'\0'`.
@@ -690,14 +688,14 @@ print(nome[2])
 Resultado:
 
 ```text
-M
-r
+C
+i
 ```
 
 Strings são sequências e possuem várias operações úteis:
 
 ```python
-nome = "Maria"
+nome = "Caio"
 
 print(len(nome))
 print(nome.upper())
@@ -707,7 +705,7 @@ print(nome.lower())
 Podemos verificar se determinado texto está contido na string:
 
 ```python
-print("Mar" in nome)
+print("Cai" in nome)
 ```
 
 ---
@@ -757,7 +755,7 @@ Uma tupla pode ser útil quando queremos representar um conjunto de valores que 
 Exemplo:
 
 ```python
-data_nascimento = (15, 8, 2000)
+data_nascimento = (16, 8, 2006)
 ```
 
 ---
@@ -796,8 +794,8 @@ Exemplo:
 
 ```python
 aluno = {
-    "nome": "Maria",
-    "idade": 20,
+    "nome": "Caio",
+    "idade": 22,
     "matricula": 12345,
     "nota": 8.5
 }
@@ -808,8 +806,8 @@ Podemos visualizar:
 ```text
 aluno
   |
-  +-- "nome"      → "Maria"
-  +-- "idade"     → 20
+  +-- "nome"      → "Caio"
+  +-- "idade"     → 22
   +-- "matricula" → 12345
   +-- "nota"      → 8.5
 ```
@@ -854,8 +852,8 @@ Podemos combinar estruturas:
 
 ```python
 aluno = {
-    "nome": "Maria",
-    "idade": 20,
+    "nome": "Caio",
+    "idade": 22,
     "notas": [8.5, 9.0, 7.5]
 }
 ```
@@ -894,8 +892,8 @@ Agora podemos criar um aluno:
 
 ```python
 aluno = Aluno(
-    "Maria",
-    20,
+    "Caio",
+    22,
     12345,
     8.5
 )
@@ -946,7 +944,7 @@ Criando um objeto:
 
 ```python
 aluno = Aluno(
-    "Maria",
+    "Caio",
     [8.5, 9.0, 7.5]
 )
 
@@ -971,9 +969,9 @@ class Aluno:
     nota: float
 
 alunos = [
-    Aluno("Maria", 20, 8.5),
-    Aluno("João", 21, 7.0),
-    Aluno("Ana", 19, 9.2)
+    Aluno("Caio", 20, 8.5),
+    Aluno("Diniz", 21, 7.0),
+    Aluno("Maycon", 19, 9.2)
 ]
 ```
 
@@ -1384,7 +1382,7 @@ Exemplo:
 
 ```python
 aluno = Aluno(
-    "Maria",
+    "Caio",
     12345,
     8.0,
     9.0
@@ -1518,13 +1516,13 @@ O último índice é `len(numeros) - 1`.
 Atribuição:
 
 ```python
-idade = 20
+idade = 22
 ```
 
 Comparação:
 
 ```python
-idade == 20
+idade == 22
 ```
 
 O operador `=` atribui um valor.
@@ -1591,7 +1589,7 @@ Nesta unidade aprendemos que:
 Em Python, os nomes das variáveis referenciam objetos.
 
 ```python
-idade = 20
+idade = 22
 ```
 
 ### Listas
@@ -1618,7 +1616,7 @@ matriz = [
 São objetos do tipo `str` utilizados para representar textos.
 
 ```python
-nome = "Maria"
+nome = "Caio"
 ```
 
 ### Tuplas
@@ -1643,8 +1641,8 @@ Associam chaves a valores.
 
 ```python
 aluno = {
-    "nome": "Maria",
-    "idade": 20
+    "nome": "Caio",
+    "idade": 22
 }
 ```
 
@@ -1667,8 +1665,8 @@ Permitem armazenar coleções de entidades.
 
 ```python
 alunos = [
-    Aluno("Maria", 20),
-    Aluno("João", 21)
+    Aluno("Caio", 22),
+    Aluno("Diniz", 20)
 ]
 ```
 
