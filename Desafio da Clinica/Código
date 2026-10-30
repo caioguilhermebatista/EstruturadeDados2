@@ -1,0 +1,126 @@
+from dataclasses import dataclass
+from typing import Optional
+
+
+@dataclass
+class No:
+    nome: str
+    prioritario: bool = False
+    seguinte: Optional['No'] = None
+
+
+class FilaClinica:
+    def __init__(self):
+        self.cabeca: Optional[No] = None
+        self.cauda: Optional[No] = None
+        self.quantidade: int = 0
+
+    def sem_pacientes(self) -> bool:
+        return self.cabeca is None
+
+    def inserir(self, nome: str, prioritario: bool = False):
+        novo = No(nome=nome, prioritario=prioritario)
+
+        if self.sem_pacientes():
+            self.cabeca = novo
+            self.cauda = novo
+        elif prioritario:
+            if not self.cabeca.prioritario:
+                # Nenhum prioritário na fila: entra na frente de todos
+                novo.seguinte = self.cabeca
+                self.cabeca = novo
+            else:
+                # Entra após o último prioritário já existente
+                ponteiro = self.cabeca
+                while ponteiro.seguinte and ponteiro.seguinte.prioritario:
+                    ponteiro = ponteiro.seguinte
+                novo.seguinte = ponteiro.seguinte
+                ponteiro.seguinte = novo
+                if novo.seguinte is None:
+                    self.cauda = novo
+        else:
+            self.cauda.seguinte = novo
+            self.cauda = novo
+
+        self.quantidade += 1
+        categoria = "URGÊNCIA" if prioritario else "Rotina"
+        print(f"\n[+] '{nome}' ({categoria}) foi incluído(a) na fila!")
+
+    def chamar(self) -> Optional[str]:
+        if self.sem_pacientes():
+            print("\n[-] Não há ninguém aguardando na fila.")
+            return None
+
+        chamado = self.cabeca.nome
+        self.cabeca = self.cabeca.seguinte
+
+        if self.cabeca is None:
+            self.cauda = None
+
+        self.quantidade -= 1
+        print(f"\n[✓] Chamando agora: {chamado}")
+        return chamado
+
+    def mostrar_fila(self):
+        if self.sem_pacientes():
+            print("\nFila de espera: [Sem pacientes]")
+            return
+
+        ponteiro = self.cabeca
+        nomes = []
+        while ponteiro is not None:
+            marcador = " (URGENTE)" if ponteiro.prioritario else ""
+            nomes.append(f"{ponteiro.nome}{marcador}")
+            ponteiro = ponteiro.seguinte
+
+        print("\nSituação da fila: " + " -> ".join(nomes))
+
+
+# --- MENU PRINCIPAL ---
+def iniciar():
+    recepcao = FilaClinica()
+
+    while True:
+        print("\n====================================")
+        print("     RECEPÇÃO DA CLÍNICA - MENU      ")
+        print("====================================")
+        print("1. Registrar Paciente (Rotina)")
+        print("2. Registrar Paciente (URGÊNCIA)")
+        print("3. Chamar Próximo da Fila")
+        print("4. Exibir Fila de Espera")
+        print("5. Finalizar Expediente (Sair)")
+
+        escolha = input("\nInforme uma opção (1-5): ").strip()
+
+        if escolha == "1":
+            nome = input("Nome do paciente: ").strip()
+            if nome:
+                recepcao.inserir(nome, prioritario=False)
+            else:
+                print("\n[!] O nome não pode ficar vazio.")
+
+        elif escolha == "2":
+            nome = input("Nome do paciente em URGÊNCIA: ").strip()
+            if nome:
+                recepcao.inserir(nome, prioritario=True)
+            else:
+                print("\n[!] O nome não pode ficar vazio.")
+
+        elif escolha == "3":
+            recepcao.chamar()
+
+        elif escolha == "4":
+            recepcao.mostrar_fila()
+
+        elif escolha == "5":
+            print("\n--- Resumo Final do Dia ---")
+            recepcao.mostrar_fila()
+            print("Expediente finalizado.")
+            break
+
+        else:
+            print("\n[!] Opção inexistente. Tente de novo.")
+
+
+# Inicia o sistema
+iniciar()
