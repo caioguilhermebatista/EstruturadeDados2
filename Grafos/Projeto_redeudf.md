@@ -1,5 +1,6 @@
 # Caderno do Estudante
 # Projeto ConectaUDF: redes sociais com grafos
+# Integrantes: Caio Guilherme, Maycon Fidelis, Ítalo Diniz e Beatriz Alves
 **Disciplina:** Algoritmos / Matemática Discreta / Ciência de Dados
 
 ## 1. O desafio
