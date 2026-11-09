@@ -129,12 +129,19 @@ Crie uma pequena rede de amizades entre essas pessoas.
 
 ### Faça
 
-1.  Defina o conjunto de vértices `V`.
-2.  Defina o conjunto de arestas `E`.
+1.  Defina o conjunto de vértices `V`: V = {João, Carolina, Maria, Marco}
+2.  Defina o conjunto de arestas `E`: E = {(João, Carolina), (João, Maria), (Carolina, Maria), (Maria, Marco)}
 3.  Desenhe o grafo correspondente.
+<img width="332" height="219" alt="image" src="https://github.com/user-attachments/assets/9fa6855b-e1a1-4988-a7d0-1448905677fd" />
+
 4.  Informe se o grafo deve ser dirigido ou não dirigido.
+R: não dirigido
+
 5.  Justifique a escolha.
+R: amizade é uma relação mútua. Se João é amigo de Carolina, Carolina é amiga de João támbem.
+
 6.  Identifique quem possui maior grau no grafo criado.
+R: Maria tem o maior grau, 3.
 
 ### Questão para reflexão
 
