@@ -56,15 +56,20 @@ Considere:
 1.  Desenhe o grafo.
  <img width="489" height="307" alt="image" src="https://github.com/user-attachments/assets/a6d6e2fc-0979-47c0-b152-9dce9e4a3e46" />
 
-2.  Identifique o número de vértices.
-3.  Identifique o número de arestas.
-4.  Determine a ordem `|V|`.
-5.  Determine o tamanho `|E|`.
-6.  Identifique se existe laço.
+2.  Identifique o número de vértices: 5
+3.  Identifique o número de arestas: 6
+4.  Determine a ordem `|V|`: 5
+5.  Determine o tamanho `|E|`: 6
+6.  Identifique se existe laço. Sim, existe laço no vértice 4
 7.  Determine o grau de cada vértice.
+ | Vértice | Arestas | Grau |
+|---------|---------|------|
+| 1 | (1,2), (1,4), (1,5) | 3 |
+| 2 | (1,2), (2,3) | 2 |
+| 3 | (2,3), (3,4) | 2 |
+| 4 | (1,4), (3,4), (4,4)×2 | 4 |
+| 5 | (1,5) | 1 |
 
-> **Atenção:** a aresta `(4,4)` é um laço. No cálculo do grau, um laço é
-> contado duas vezes.
 
 ### Plataformas
 
