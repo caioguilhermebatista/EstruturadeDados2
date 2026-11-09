@@ -54,6 +54,8 @@ Considere:
 ### Faça
 
 1.  Desenhe o grafo.
+ <img width="489" height="307" alt="image" src="https://github.com/user-attachments/assets/a6d6e2fc-0979-47c0-b152-9dce9e4a3e46" />
+
 2.  Identifique o número de vértices.
 3.  Identifique o número de arestas.
 4.  Determine a ordem `|V|`.
