@@ -171,12 +171,18 @@ mão única.
 1.  Represente cada cruzamento ou ponto relevante por um vértice.
 2.  Represente cada rua por uma aresta dirigida.
 3.  Utilize setas para indicar o sentido permitido.
+<img width="341" height="219" alt="image" src="https://github.com/user-attachments/assets/f02c3281-6b57-4b70-857b-31f23e73e58a" />
+
 4.  Defina os conjuntos `V` e `E`.
-5.  Escolha um vértice e determine:
-    -   seu grau de entrada;
-    -   seu grau de saída.
+* V = {A, B, C, D, E}
+* E = {(A,B), (B,C), (C,D), (D,A), (B,E), (E,C)}
+5.  Escolha um vértice e determine: Vértice 'B'
+    -   seu grau de entrada: 1 (A,B)
+    -   seu grau de saída: 2 (B,C) e (B,E)
 6.  Explique por que um grafo não dirigido não representa adequadamente
     essa situação.
+
+R: Pois ele não é capaz de mostrar que determinados percursos não são possíveis de serem feitos, exemplo: não posso ir de 'B' para 'A', somente de 'A' para 'B', e só é possível saber isso por conta do direcionamento
 
 ### Plataformas
 
