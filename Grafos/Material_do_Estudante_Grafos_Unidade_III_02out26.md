@@ -101,10 +101,10 @@ Utilize o grafo construído na Atividade 1.
 
 3.  Escolha dois vértices adjacentes e explique por que são considerados
     vizinhos.
-    R: 1 e 2. São vizinhos porque existe a aresta (1,2) ligando os dois, ou seja, essa aresta é incidente a ambos.
+ R: 1 e 2. São vizinhos porque existe a aresta (1,2) ligando os dois, ou seja, essa aresta é incidente a ambos.
 
 4.  Escolha dois vértices não adjacentes e justifique sua resposta.
-    R: 2 e 4. Não existe a aresta (2,4). Eles só se conectam por caminhos indiretos, como 2–1–4.                    
+ R: 2 e 4. Não existe a aresta (2,4). Eles só se conectam por caminhos indiretos, como 2–1–4.                    
 
 ### Plataformas
 
