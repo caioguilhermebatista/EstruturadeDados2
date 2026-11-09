@@ -147,6 +147,8 @@ R: Maria tem o maior grau, 3.
 
 **O que os vértices e as arestas representam nesse problema?**
 
+R: os vértices representam as pessoas, e as arestas representam a relação de amizade entre essas duas pessoas.
+
 ### Plataformas
 
 -   diagrams.net;
