@@ -62,7 +62,7 @@ Considere:
 5.  Determine o tamanho `|E|`: 6
 6.  Identifique se existe laço. Sim, existe laço no vértice 4
 7.  Determine o grau de cada vértice.
- | Vértice | Arestas | Grau |
+| Vértice | Arestas | Grau |
 |---------|---------|------|
 | 1 | (1,2), (1,4), (1,5) | 3 |
 | 2 | (1,2), (2,3) | 2 |
