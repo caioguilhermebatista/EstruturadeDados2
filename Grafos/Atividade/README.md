@@ -223,4 +223,4 @@ Entregue:
 ## 12. Pergunta de reflexão
 Duas pessoas ainda não são amigas, mas têm três amigos em comum. Como essa informação poderia ser usada para sugerir uma nova conexão? Quais cuidados de privacidade devem ser considerados ao analisar redes sociais?
 
-**Resposta:** A plataforma conta quantos amigos duas pessoas têm em comum, e quanto maior esse número, maior a chance de elas se conhecerem. Com três amigos em comum, é muito provável que o sistema sugira uma à outra, o que pode criar uma nova amizade e deixar a rede mais conectada
+**Resposta:** A plataforma conta quantos amigos duas pessoas têm em comum, e quanto maior esse número, maior a chance de elas se conhecerem. Com três amigos em comum, é muito provável que o sistema sugira uma à outra, o que pode criar uma nova amizade e deixar a rede mais conectada.Os dados de amizades são pessoais, então a plataforma deve usá-los com consentimento e transparência, deixando claro que usa as conexões para sugerir amigos.
