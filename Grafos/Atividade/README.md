@@ -2,7 +2,7 @@
 # Projeto ConectaUDF: redes sociais com grafos
 **Disciplina:** Algoritmos / Matemática Discreta / Ciência de Dados
 
-**Alunos:** Isaque Kirmse / Liz Cristina
+**Alunos:** Caio Guilher / Maycon Fidelis / Ítalo Diniz / Beatriz Alves
 
 ## 1. O desafio
 Você faz parte da equipe que analisa a rede social fictícia **ConectaUDF**. Sua missão é representar as amizades em um grafo, realizar cálculos e usar Python para interpretar a estrutura da rede.
@@ -19,36 +19,56 @@ Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcio
 ## 3. Conheça os usuários
 | Código | Usuário |
 |---|---|
-| A | Isaque |
-| B | Liz |
-| C | Gabriel |
-| D | Jamilly |
-| E | Pedro |
-| F | Eduarda |
-| G | Vinicius |
-| H | Ana |
-| I | Fernando |
-| J | Lucas |
+| A | Caio |
+| B | Maycon |
+| C | Diniz |
+| D | Beatriz |
+| E | Hugo |
+| F | Felipe |
+| G | Gabriel |
+| H | Hendrick |
+| I | Jean |
+| J | Jeronimo |
+| K | Kelly |
+| L | Leandro |
+| M | Mônica |
+| N | Nando |
+| O | Otávio |
+| P | Pedro |
 
-As amizades são:
-1. Isaque — Liz
-2. Isaque — Gabriel
-3. Isaque — Jamilly
-4. Liz — Gabriel
-5. Gabriel — Jamilly
-6. Gabriel — Ana
-7. Jamilly — Pedro
-8. Jamilly — Eduarda
-9. Jamilly — Ana
-10. Pedro — Vinicius
-11. Eduarda — Fernando
-12. Vinicius — Fernando
-13. Fernando — Lucas
+
+
+## Lista de ligações
+
+1. Caio — Diniz
+2. Caio — Gabriel
+3. Caio — Kelly
+4. Caio — Otávio
+5. Maycon — Beatriz
+6. Maycon — Nando
+7. Diniz — Jean
+8. Diniz — Kelly
+9. Diniz — Leandro
+10. Beatriz — Felipe
+11. Beatriz — Jeronimo
+12. Beatriz — Mônica
+13. Hugo — Gabriel
+14. Hugo — Otávio
+15. Felipe — Mônica
+16. Felipe — Pedro
+17. Hendrick — Leandro
+18. Hendrick — Nando
+19. Jean — Nando
+20. Jean — Pedro
+21. Jeronimo — Leandro
+22. Jeronimo — Pedro
+23. Mônica — Nando
 
 ---
 ### Resposta
 
-![](imagem1.png)
+<img width="540" height="450" alt="Captura de tela 2026-11-09 222409" src="https://github.com/user-attachments/assets/16e2c8f0-2692-472d-9c6a-7a8822978d86" />
+
 
 
 ---
@@ -66,20 +86,26 @@ As amizades são:
 Conte quantas linhas chegam a cada círculo. Registre o resultado.
 
 | Usuário | Amigos diretos | Grau |
-|---|---|---:|
-| Isaque | Liz, Gabriel, Jamilly | 3 |
-| Liz | Isaque, Gabriel | 2 |
-| Gabriel | Isaque, Liz, Jamilly, Ana | 4 |
-| Jamilly | Isaque, Gabriel, Pedro, Eduarda, Ana | 5 |
-| Pedro | Jamilly, Vinicius | 2 |
-| Eduarda | Jamilly, Fernando | 2 |
-| Vinicius | Pedro, Fernando | 2 |
-| Ana | Gabriel, Jamilly | 2 |
-| Fernando | Eduarda, Vinicius, Lucas | 3 |
-| Lucas | Fernando | 1 |
+|---|---|---|
+| Caio | Diniz, Gabriel, Kelly, Otávio | 4 |
+| Maycon | Beatriz, Nando | 2 |
+| Diniz | Caio, Jean, Kelly, Leandro | 4 |
+| Beatriz | Maycon, Felipe, Jeronimo, Mônica | 4 |
+| Hugo | Gabriel, Otávio | 2 |
+| Felipe | Beatriz, Mônica, Pedro | 3 |
+| Gabriel | Caio, Hugo | 2 |
+| Hendrick | Leandro, Nando | 2 |
+| Jean | Diniz, Nando, Pedro | 3 |
+| Jeronimo | Beatriz, Leandro, Pedro | 3 |
+| Kelly | Caio, Diniz | 2 |
+| Leandro | Diniz, Hendrick, Jeronimo | 3 |
+| Mônica | Beatriz, Felipe, Nando | 3 |
+| Nando | Maycon, Hendrick, Jean, Mônica | 4 |
+| Otávio | Caio, Hugo | 2 |
+| Pedro | Felipe, Jean, Jeronimo | 3 |
 
-**Pergunta 1:** quem tem mais conexões diretas?  
-Resposta: Jamilly
+**Pergunta 1: quem tem mais conexões diretas?**
+Resposta: Caio, Diniz, Beatriz e Nando empatam, cada um com grau 4.
 
 ## 6. Passo a passo: calcule o número de amizades
 Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é contada duas vezes.
@@ -87,9 +113,9 @@ Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é co
 **Fórmula:**  
 `Número de arestas = soma dos graus ÷ 2`
 
-1. Soma dos graus: 3 + 2 + 4 + 5 + 2 + 2 + 2 + 2 + 3 + 1 = 26
-2. Divida por 2: 26 ÷ 2 = 13
-3. Quantas amizades existem no grafo? 13
+1. Soma dos graus: 4 + 2 + 4 + 4 + 2 + 3 + 2 + 2 + 3 + 3 + 2 + 3 + 3 + 4 + 2 + 3 = 46
+2. Divida por 2: 46 ÷ 2 = 23
+3. Quantas amizades existem no grafo? 23
 
 ## 7. Passo a passo: calcule a densidade
 A densidade compara as amizades existentes com o total de amizades possíveis.
@@ -104,13 +130,13 @@ Em que:
 - `V` = número de vértices.
 
 Substitua os valores:
-`D = 2 × 13 / (10 × (10 − 1))`
+`D = 2 × 23 / (16 × (16 − 1))`
 
-Resultado decimal: 0,2889  
-Resultado percentual: 28,89%
+Resultado decimal: 0,1917 
+Resultado percentual: 19,17%
 
 **Interprete:** a rede tem poucas ou muitas das conexões possíveis? Explique com suas palavras.
-**Resposta:** Possui poucas conexões possíveis porque o calculo mostrou que são quase 29% apenas das conexões possíveis.
+**Resposta:** Possui poucas conexões possíveis porque o calculo mostrou que são quase 19% apenas das conexões possíveis.
 
 ________________________________________________________________
 
@@ -119,16 +145,22 @@ A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Di
 
 ```python
 rede = {
-    "Isaque": ["Liz", "Gabriel", "Jamilly"],
-    "Liz": ["Isaque", "Gabriel"],
-    "Gabriel": ["Isaque", "Liz", "Jamilly", "Ana"],
-    "Jamilly": ["Isaque", "Gabriel", "Pedro", "Eduarda", "Ana"],
-    "Pedro": ["Jamilly", "Vinicius"],
-    "Eduarda": ["Jamilly", "Fernando"],
-    "Vinicius": ["Pedro", "Fernando"],
-    "Ana": ["Gabriel", "Jamilly"],
-    "Fernando": ["Eduarda", "Vinicius", "Lucas"],
-    "Lucas": ["Fernando"]
+    "Caio": ["Diniz", "Gabriel", "Kelly", "Otávio"],
+    "Maycon": ["Beatriz", "Nando"],
+    "Diniz": ["Caio", "Jean", "Kelly", "Leandro"],
+    "Beatriz": ["Maycon", "Felipe", "Jeronimo", "Mônica"],
+    "Hugo": ["Gabriel", "Otávio"],
+    "Felipe": ["Beatriz", "Mônica", "Pedro"],
+    "Gabriel": ["Caio", "Hugo"],
+    "Hendrick": ["Leandro", "Nando"],
+    "Jean": ["Diniz", "Nando", "Pedro"],
+    "Jeronimo": ["Beatriz", "Leandro", "Pedro"],
+    "Kelly": ["Caio", "Diniz"],
+    "Leandro": ["Diniz", "Hendrick", "Jeronimo"],
+    "Mônica": ["Beatriz", "Felipe", "Nando"],
+    "Nando": ["Maycon", "Hendrick", "Jean", "Mônica"],
+    "Otávio": ["Caio", "Hugo"],
+    "Pedro": ["Felipe", "Jean", "Jeronimo"]
 }
 
 # Quantidade de usuarios
@@ -159,14 +191,14 @@ print(f"Densidade: {densidade:.2%}")
 6. A fórmula final calcula a densidade.
 
 ## 9. Passo a passo: encontre um caminho
-Encontre um caminho de Ana até Felipe. Cada passagem por uma linha corresponde a uma aresta.
+Encontre um caminho de Caio até Mônica. Cada passagem por uma linha corresponde a uma aresta.
 
 Exemplo de registro:
-`Liz → Gabriel → Jamilly → Eduarda → Fernando → Lucas`
+`Caio → Diniz → Jean → Nando → Mônica`
 
-- Quantas arestas há no caminho? 5
-- Você encontrou outro caminho com a mesma quantidade de arestas? Qual? Sim.
-`Liz → Isaque → Jamilly → Eduarda → Fernando → Lucas`
+- Quantas arestas há no caminho? 4
+- Você encontrou outro caminho com a mesma quantidade de arestas? Qual? Não, o mais perto fica com 5 arestas.
+`Caio → Diniz → Jean → Pedro → Felipe → Mônica`
 
 ________________________________________________________________
 
@@ -191,4 +223,4 @@ Entregue:
 ## 12. Pergunta de reflexão
 Duas pessoas ainda não são amigas, mas têm três amigos em comum. Como essa informação poderia ser usada para sugerir uma nova conexão? Quais cuidados de privacidade devem ser considerados ao analisar redes sociais?
 
-**Resposta:** A prória rede social tem o sistema de sugestão de amigos em comum, essas duas pessoas tendo 3 amigos em comum, isso faz com que seja muito provável a indicação da própria plataforma de uma para outra, formando um novo laço de amizade.
+**Resposta:** A plataforma conta quantos amigos duas pessoas têm em comum, e quanto maior esse número, maior a chance de elas se conhecerem. Com três amigos em comum, é muito provável que o sistema sugira uma à outra, o que pode criar uma nova amizade e deixar a rede mais conectada
