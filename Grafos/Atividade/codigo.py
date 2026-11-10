@@ -1,20 +1,24 @@
 rede = {
-    "Caio": ["Diniz", "Gabriel", "Kelly", "Otávio"],
-    "Maycon": ["Beatriz", "Nando"],
+    "Caio": ["Diniz", "Gabriel", "Kelly", "Otávio", "Tainá"],
+    "Maycon": ["Beatriz", "Nando", "Silva", "Fred"],
     "Diniz": ["Caio", "Jean", "Kelly", "Leandro"],
-    "Beatriz": ["Maycon", "Felipe", "Jeronimo", "Mônica"],
-    "Hugo": ["Gabriel", "Otávio"],
+    "Beatriz": ["Maycon", "Felipe", "Jeronimo", "Mônica", "Raquel"],
+    "Hugo": ["Gabriel", "Fred", "Otávio"],
     "Felipe": ["Beatriz", "Mônica", "Pedro"],
-    "Gabriel": ["Caio", "Hugo"],
+    "Gabriel": ["Caio", "Hugo", "Tainá"],
     "Hendrick": ["Leandro", "Nando"],
     "Jean": ["Diniz", "Nando", "Pedro"],
     "Jeronimo": ["Beatriz", "Leandro", "Pedro"],
-    "Kelly": ["Caio", "Diniz"],
+    "Kelly": ["Caio", "Diniz", "Silva"],
     "Leandro": ["Diniz", "Hendrick", "Jeronimo"],
     "Mônica": ["Beatriz", "Felipe", "Nando"],
-    "Nando": ["Maycon", "Hendrick", "Jean", "Mônica"],
+    "Nando": ["Maycon", "Hendrick", "Jean", "Mônica", "Silva"],
     "Otávio": ["Caio", "Hugo"],
-    "Pedro": ["Felipe", "Jean", "Jeronimo"]
+    "Pedro": ["Felipe", "Jean", "Jeronimo"],
+    "Fred": ["Maycon", "Hugo", "Raquel", "Tainá"],
+    "Raquel": ["Beatriz", "Silva", "Fred"],
+    "Silva": ["Maycon", "Kelly", "Nando", "Raquel"],
+    "Tainá": ["Caio", "Gabriel", "Fred"]
 }
 
 # Quantidade de usuarios
