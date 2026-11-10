@@ -17,6 +17,7 @@ Você faz parte da equipe que analisa a rede social fictícia **ConectaUDF**. Su
 Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcionado**.
 
 ## 3. Conheça os usuários
+## 3. Conheça os usuários
 | Código | Usuário |
 |---|---|
 | A | Caio |
@@ -40,86 +41,96 @@ Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcio
 | S | Silva |
 | T | Tainá |
 
-
-
 ## Lista de ligações
 
 1. Caio — Diniz
 2. Caio — Gabriel
 3. Caio — Kelly
 4. Caio — Otávio
-5. Maycon — Beatriz
-6. Maycon — Nando
-7. Diniz — Jean
-8. Diniz — Kelly
-9. Diniz — Leandro
-10. Beatriz — Felipe
-11. Beatriz — Jeronimo
-12. Beatriz — Mônica
-13. Hugo — Gabriel
-14. Hugo — Otávio
-15. Felipe — Mônica
-16. Felipe — Pedro
-17. Hendrick — Leandro
-18. Hendrick — Nando
-19. Jean — Nando
-20. Jean — Pedro
-21. Jeronimo — Leandro
-22. Jeronimo — Pedro
-23. Mônica — Nando
+5. Caio — Tainá
+6. Maycon — Beatriz
+7. Maycon — Nando
+8. Maycon — Silva
+9. Maycon — Fred
+10. Diniz — Jean
+11. Diniz — Kelly
+12. Diniz — Leandro
+13. Beatriz — Felipe
+14. Beatriz — Jeronimo
+15. Beatriz — Mônica
+16. Beatriz — Raquel
+17. Hugo — Gabriel
+18. Hugo — Fred
+19. Hugo — Otávio
+20. Felipe — Mônica
+21. Felipe — Pedro
+22. Gabriel — Tainá
+23. Hendrick — Leandro
+24. Hendrick — Nando
+25. Jean — Nando
+26. Jean — Pedro
+27. Jeronimo — Leandro
+28. Jeronimo — Pedro
+29. Kelly — Silva
+30. Mônica — Nando
+31. Nando — Silva
+32. Raquel — Silva
+33. Raquel — Fred
+34. Fred — Tainá
 
 ---
 ### Resposta
 
-<img width="540" height="450" alt="Captura de tela 2026-11-09 222409" src="https://github.com/user-attachments/assets/16e2c8f0-2692-472d-9c6a-7a8822978d86" />
-
+<img width="730" height="603" alt="Grafo" src="https://github.com/user-attachments/assets/b6d3f5d9-b482-498c-af34-6c01392a4b01" />
 
 
 ---
 
 ## 4. Passo a passo: desenhe o grafo
-1. Desenhe seis círculos, um para cada usuário.
+1. Desenhe vinte círculos, um para cada usuário.
 2. Escreva o nome de cada pessoa dentro do círculo.
 3. Para cada amizade da lista, desenhe uma linha entre os dois usuários.
 4. Não desenhe duas linhas para a mesma amizade.
-5. Confira se todas as oito amizades aparecem.
-
-**Espaço para o seu desenho:** faça o grafo no caderno ou em uma ferramenta de desenho.
+5. Confira se todas as 34 amizades aparecem.
 
 ## 5. Passo a passo: calcule o grau
 Conte quantas linhas chegam a cada círculo. Registre o resultado.
 
 | Usuário | Amigos diretos | Grau |
 |---|---|---|
-| Caio | Diniz, Gabriel, Kelly, Otávio | 4 |
-| Maycon | Beatriz, Nando | 2 |
+| Caio | Diniz, Gabriel, Kelly, Otávio, Tainá | 5 |
+| Maycon | Beatriz, Nando, Silva, Fred | 4 |
 | Diniz | Caio, Jean, Kelly, Leandro | 4 |
-| Beatriz | Maycon, Felipe, Jeronimo, Mônica | 4 |
-| Hugo | Gabriel, Otávio | 2 |
+| Beatriz | Maycon, Felipe, Jeronimo, Mônica, Raquel | 5 |
+| Hugo | Gabriel, Fred, Otávio | 3 |
 | Felipe | Beatriz, Mônica, Pedro | 3 |
-| Gabriel | Caio, Hugo | 2 |
+| Gabriel | Caio, Hugo, Tainá | 3 |
 | Hendrick | Leandro, Nando | 2 |
 | Jean | Diniz, Nando, Pedro | 3 |
 | Jeronimo | Beatriz, Leandro, Pedro | 3 |
-| Kelly | Caio, Diniz | 2 |
+| Kelly | Caio, Diniz, Silva | 3 |
 | Leandro | Diniz, Hendrick, Jeronimo | 3 |
 | Mônica | Beatriz, Felipe, Nando | 3 |
-| Nando | Maycon, Hendrick, Jean, Mônica | 4 |
+| Nando | Maycon, Hendrick, Jean, Mônica, Silva | 5 |
 | Otávio | Caio, Hugo | 2 |
 | Pedro | Felipe, Jean, Jeronimo | 3 |
+| Fred | Maycon, Hugo, Raquel, Tainá | 4 |
+| Raquel | Beatriz, Silva, Fred | 3 |
+| Silva | Maycon, Kelly, Nando, Raquel | 4 |
+| Tainá | Caio, Gabriel, Fred | 3 |
 
 **Pergunta 1: quem tem mais conexões diretas?**
-Resposta: Caio, Diniz, Beatriz e Nando empatam, cada um com grau 4.
+Resposta: Caio, Beatriz e Nando empatam, cada um com grau 5.
 
 ## 6. Passo a passo: calcule o número de amizades
 Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é contada duas vezes.
 
-**Fórmula:**  
+**Fórmula:**
 `Número de arestas = soma dos graus ÷ 2`
 
-1. Soma dos graus: 4 + 2 + 4 + 4 + 2 + 3 + 2 + 2 + 3 + 3 + 2 + 3 + 3 + 4 + 2 + 3 = 46
-2. Divida por 2: 46 ÷ 2 = 23
-3. Quantas amizades existem no grafo? 23
+1. Soma dos graus: 5 + 4 + 4 + 5 + 3 + 3 + 3 + 2 + 3 + 3 + 3 + 3 + 3 + 5 + 2 + 3 + 4 + 3 + 4 + 3 = 68
+2. Divida por 2: 68 ÷ 2 = 34
+3. Quantas amizades existem no grafo? 34
 
 ## 7. Passo a passo: calcule a densidade
 A densidade compara as amizades existentes com o total de amizades possíveis.
@@ -134,37 +145,39 @@ Em que:
 - `V` = número de vértices.
 
 Substitua os valores:
-`D = 2 × 23 / (16 × (16 − 1))`
+`D = 2 × 34 / (20 × (20 − 1)) = 68 / 380`
 
-Resultado decimal: 0,1917 
-Resultado percentual: 19,17%
+Resultado decimal: 0,1789
+Resultado percentual: 17,89%
 
 **Interprete:** a rede tem poucas ou muitas das conexões possíveis? Explique com suas palavras.
-**Resposta:** Possui poucas conexões possíveis porque o calculo mostrou que são quase 19% apenas das conexões possíveis.
-
-________________________________________________________________
+**Resposta:** Possui poucas conexões possíveis, porque o cálculo mostrou que são apenas cerca de 18% das conexões possíveis. Dos 190 pares de usuários que poderiam ser amigos, só 34 realmente são.
 
 ## 8. Passo a passo: represente o grafo em Python
 A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Digite o código em Python (por exemplo, no Google Colab ou em outro ambiente disponível).
 
 ```python
 rede = {
-    "Caio": ["Diniz", "Gabriel", "Kelly", "Otávio"],
-    "Maycon": ["Beatriz", "Nando"],
+    "Caio": ["Diniz", "Gabriel", "Kelly", "Otávio", "Tainá"],
+    "Maycon": ["Beatriz", "Nando", "Silva", "Fred"],
     "Diniz": ["Caio", "Jean", "Kelly", "Leandro"],
-    "Beatriz": ["Maycon", "Felipe", "Jeronimo", "Mônica"],
-    "Hugo": ["Gabriel", "Otávio"],
+    "Beatriz": ["Maycon", "Felipe", "Jeronimo", "Mônica", "Raquel"],
+    "Hugo": ["Gabriel", "Fred", "Otávio"],
     "Felipe": ["Beatriz", "Mônica", "Pedro"],
-    "Gabriel": ["Caio", "Hugo"],
+    "Gabriel": ["Caio", "Hugo", "Tainá"],
     "Hendrick": ["Leandro", "Nando"],
     "Jean": ["Diniz", "Nando", "Pedro"],
     "Jeronimo": ["Beatriz", "Leandro", "Pedro"],
-    "Kelly": ["Caio", "Diniz"],
+    "Kelly": ["Caio", "Diniz", "Silva"],
     "Leandro": ["Diniz", "Hendrick", "Jeronimo"],
     "Mônica": ["Beatriz", "Felipe", "Nando"],
-    "Nando": ["Maycon", "Hendrick", "Jean", "Mônica"],
+    "Nando": ["Maycon", "Hendrick", "Jean", "Mônica", "Silva"],
     "Otávio": ["Caio", "Hugo"],
-    "Pedro": ["Felipe", "Jean", "Jeronimo"]
+    "Pedro": ["Felipe", "Jean", "Jeronimo"],
+    "Fred": ["Maycon", "Hugo", "Raquel", "Tainá"],
+    "Raquel": ["Beatriz", "Silva", "Fred"],
+    "Silva": ["Maycon", "Kelly", "Nando", "Raquel"],
+    "Tainá": ["Caio", "Gabriel", "Fred"]
 }
 
 # Quantidade de usuarios
@@ -186,6 +199,14 @@ densidade = (2 * arestas) / (n * (n - 1))
 print(f"Densidade: {densidade:.2%}")
 ```
 
+Saída esperada nas últimas linhas:
+
+```
+Total de usuarios: 20
+Total de amizades: 34
+Densidade: 17.89%
+```
+
 ### Entenda o código
 1. `rede` guarda os usuários e suas listas de amigos.
 2. `len(rede)` conta os usuários.
@@ -201,8 +222,16 @@ Exemplo de registro:
 `Caio → Diniz → Jean → Nando → Mônica`
 
 - Quantas arestas há no caminho? 4
-- Você encontrou outro caminho com a mesma quantidade de arestas? Qual? Não, o mais perto fica com 5 arestas.
-`Caio → Diniz → Jean → Pedro → Felipe → Mônica`
+- Você encontrou outro caminho com a mesma quantidade de arestas? Qual? Sim.
+`Caio → Kelly → Silva → Nando → Mônica`
+
+## 10. Perguntas finais
+
+**Duas pessoas ainda não são amigas, mas têm três amigos em comum. Como essa informação poderia ser usada para sugerir uma nova conexão?**
+Resposta: A própria rede social tem o sistema de sugestão de amigos em comum. Quanto mais amigos em comum duas pessoas têm, maior a chance de se conhecerem, então a plataforma tende a sugerir uma à outra, formando um novo laço de amizade. No grafo, Maycon e Mônica não são amigos, mas têm Beatriz e Nando em comum, e por isso seriam candidatos a uma sugestão.
+
+**Quais cuidados de privacidade devem ser considerados ao analisar redes sociais?**
+Resposta: Os dados de amizades são pessoais, então a plataforma deve usá-los com consentimento e transparência. Também deve evitar que uma sugestão exponha alguém que não quer ser encontrado (como um ex), deixar o usuário controlar quem pode vê-lo e proteger os dados contra vazamentos e uso indevido.
 
 ________________________________________________________________
 
