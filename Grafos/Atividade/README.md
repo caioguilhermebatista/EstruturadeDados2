@@ -35,6 +35,10 @@ Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcio
 | N | Nando |
 | O | Otávio |
 | P | Pedro |
+| Q | Fred |
+| R | Raquel |
+| S | Silva |
+| T | Tainá |
 
 
 
