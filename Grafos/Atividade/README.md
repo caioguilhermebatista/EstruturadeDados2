@@ -2,7 +2,7 @@
 # Projeto ConectaUDF: redes sociais com grafos
 **Disciplina:** Algoritmos / Matemática Discreta / Ciência de Dados
 
-**Alunos:** Caio Guilher / Maycon Fidelis / Ítalo Diniz / Beatriz Alves
+**Alunos:** Caio Guilherme / Maycon Fidelis / Ítalo Diniz / Beatriz Alves
 
 ## 1. O desafio
 Você faz parte da equipe que analisa a rede social fictícia **ConectaUDF**. Sua missão é representar as amizades em um grafo, realizar cálculos e usar Python para interpretar a estrutura da rede.
